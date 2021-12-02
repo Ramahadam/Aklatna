@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #70d080;
+    --color-secondary: #ffc107;
+    --color-headings: #3e3e3ea8;
+    --color-body: #3f3d56c2;
+    
+}
+
+body {
+    color: rgb(163, 163, 163);
+    line-height: 1.7rem;
+    font-size: 0.8rem;
+    overflow-x: hidden;
+    font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-headings);
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+ }
+ 
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/*________ Custom Buttons___________ */
+
+.btn__hero {
+    background-color: var(--color-secondary);
+    outline: none !important;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn__hero:focus {
+    box-shadow: none;
+}
+
+.btn__order {
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.btn__order:hover {
+    color: var(--color-secondary);
+    background-color: #fff;
+    border: 1px solid var(--color-secondary);
+    transition: all 1s ease;
+}
+
+/* ________________navigation bar __________*/
+
+.navbar-brand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: var(--color-primary) !important;
+}
+
+.navbar-brand .logo {
+    width: 30px;
+    height: 30px;
+    fill: var(--color-secondary);
+}
+
+.navbar-brand span {
+    color: var(--color-secondary) !important;
+}
+
+/*__________________ section hero_________________ */
+.hero {
+    padding: 7% 1rem;
+    width: 100%;
+    background-color: #eff5f5;
+}
+
+.hero__content {
+    text-align: left;
+}
+
+.hero__title {
+    color: var(--color-primary);
+}
+
+.hero__image>img {
+    max-height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .hero__content {
+        text-align: center;
+    }
+
+    .hero__content h1 {
+        line-height: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero__content p {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+}
+
+
+
+/*_______________ food type  _______________*/
+
+.food_type {
+    margin: 4rem 0;
+    padding: 0 3rem;
+}
+
+.food__heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+T .food__heading p {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.food__items {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 8px 1px #e4e3df;
+    position: relative;
+    margin: 0 auto 3rem;
+    max-width: 90%;
+
+
+}
+
+
+.food__items::before {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    display: block;
+    content: 'Fresh';
+    height: 30px;
+    width: 20%;
+    background-color: rgb(112 208 128);
+    color: #fff;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+}
+
+.food__items img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.food__items>img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 1s ease;
+}
+
+.food__items-wrapper {
+    padding: 0 1.2rem;
+}
+
+.food__items-wrapper h3 {
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: var(--color-primary);
+}
+
+.food__items-wrapper p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+.order {
+    margin: 0.5rem;
+    color: var(--color-secondary);
+}
+
+.order__name {
+    font-size: 0.8rem;
+}
+
+.order__price {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+
+
+.rating {
+    position: absolute;
+    top: 210px;
+    left: 70%;
+}
+
+.rating .fa {
+    font-size: 0.7rem;
+}
+
+.checked {
+    color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+    .food_type {
+        padding: 0 2rem;
+    }
+
+    .food__items {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .rating .fa {
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width: 1600px) {
+   .food__items {
+        max-width: 400px;
+    }
+}
+
+
+
+/* socaila media */
+.socail_media {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+}
+
+.socail_media a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.socail_media span {
+    display: block;
+    margin: 10px 0;
+}
